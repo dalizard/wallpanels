@@ -1,0 +1,41 @@
+.slider-wrapper
+  #slider.nivoSlider
+    - @slideshow_images.each do |image|
+      = image_tag "slideshow/#{File.basename(image)}"
+
+%h1 MyWallArt 3d Wall Panels give an extra dimension to your walls!
+
+%p
+  WallArt brings your walls to life with her modern and eco friendly 3d wall panels
+  made out of the fibrous residue of sugarcane. This fibres of crushed sugarcane stalks,
+  remaining after raw sugar is extracted from the juice of the sugarcane by shredding it,
+  is now the raw material, called bagasse, that forms the base of this easily installed eco
+  friendly product. The raw material used for our 3d wallpanel is 100% recycled, compostable
+  and is therefore 100% biodegradable.
+
+%p
+  Recently chosen by interior designers in the United States as one of the best and most
+  innovative eco friendly home decor product of the year. The WallArt 3d-wallpanels all are
+  made out of renewable sources which are biodegradable and therefore contribute to sustainability.
+  The WallArt 3dwallpanels are designed that when put together they form a pattern. After installing
+  them they can be painted in every colour which fits the interior of your house or a new to be
+  created style.
+
+%p
+  WallArt introduced their 3d-wall panels in Europe in 2010. They've been the first entering the
+  market with this eco friendly home decor and interior product. At this moment there are 20
+  different models of the WallArt 3d wallpanel available, for more information about them click
+  on Our designs. The WallArt embossed panels give an extra dimension to your walls and they fit
+  in almost every room of the house. The living room, the bedroom: WallArt 3d wall panels bring
+  your walls to life!
+
+:javascript
+  $(document).ready(function() {
+    $('#slider').nivoSlider({
+      effect: 'fold',
+      controlNav: false,
+      directionNav: false,
+      pauseTime: 5000,
+      randomStart: true
+    });
+  });
