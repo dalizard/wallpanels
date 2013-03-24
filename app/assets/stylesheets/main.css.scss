@@ -101,16 +101,18 @@ body {
   > header, > footer {
     background-color: $grey;
     color: white;
-    height: 150px;
+    height: 40px;
   }
 }
 
 body > header {
   margin-bottom: 40px;
+  padding-top:60px;
 }
 
 body > footer {
   margin-top: 40px;
+  padding-top: 10px;
 }
 
 .index-page {
