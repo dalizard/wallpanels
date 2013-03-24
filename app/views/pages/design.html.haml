@@ -15,5 +15,18 @@
     A single WallArt commercial packaging contains 12 pieces of 3d wallpanel
     which covers a total of 3 square meters of wall.
 
+  %ul.clearfix
+    - @thumbnails.each do |thumbnail|
+      %li
+        = image_tag "products/#{File.basename(thumbnail)}"
+
 .design-image
   = image_tag "products/#{@design}-1.jpg"
+
+:javascript
+  $(document).ready(function() {
+    $('.design-details ul li img').mouseover(function() {
+      var src = $(this).attr('src').replace("_tn", "");
+      $('.design-image img').attr('src', src);
+    });
+  });

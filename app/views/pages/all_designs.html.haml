@@ -13,3 +13,11 @@
         = image_tag "products/#{File.basename(thumbnail)}"
       %span
         = File.basename(thumbnail).split('-').first.capitalize
+
+:javascript
+  $(document).ready(function() {
+    $('.thumbnails li img').mouseover(function() {
+      var src = $(this).attr('src').replace("_tn", "");
+      $('.main-image img').attr('src', src);
+    });
+  });

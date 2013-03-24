@@ -19,7 +19,7 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: 14px;
     line-height: 1.4;
 }
 
@@ -162,6 +162,31 @@ ul.thumbnails {
   }
 }
 
+.design-details {
+  width: 422px;
+  float: left;
+  ul {
+    list-style: none;
+    li {
+      float: left;
+      margin: 0 10px 0 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        border: 1px solid $grey;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.design-image {
+  float: right;
+  img {
+    border: 1px solid $grey;
+  }
+}
 
 /* ==========================================================================
    Helper classes
