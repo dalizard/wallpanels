@@ -6,7 +6,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Wall Panels</title>
+  <title>Wall Accent</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -18,10 +18,10 @@
     <div class="content-wrapper">
       <nav id="main-navigation">
         <ol>
-          <li><%= link_to 'About Us' %></li>
-          <li><%= link_to 'Our Designs', designs_path %></li>
-          <li><%= link_to 'Eco Product' %></li>
-          <li><%= link_to 'Contact Us' %></li>
+          <li><%= link_to t('About Us'), root_path %></li>
+          <li><%= link_to t('Our Designs'), designs_path %></li>
+          <li><%= link_to t('Eco Products'), root_path %></li>
+          <li><%= link_to t('Contact Us'), root_path %></li>
         </ol>
       </nav>
     </div>
@@ -36,7 +36,7 @@
 
   <footer>
     <div class="content-wrapper">
-      <p>2013 &copy; All rights reserved
+      <p>2013 Wall Accent &copy; All rights reserved
     </div>
   </footer>
   </body>
