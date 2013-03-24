@@ -135,8 +135,31 @@ body > footer {
 }
 
 .content-wrapper {
-  width: 869px;
+  width: 970px;
   margin: 0 auto;
+}
+
+div.main-image {
+  float: left;
+  width: 500px;
+  img {
+    border: 1px solid $grey;
+  }
+}
+
+ul.thumbnails {
+  float:right;
+  width: 432px;
+  li {
+    width: 98px;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0 0;
+    text-align: center;
+    img {
+      border: 1px solid $grey;
+    }
+  }
 }
 
 

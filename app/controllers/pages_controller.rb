@@ -3,5 +3,11 @@ class PagesController < ApplicationController
     @slideshow_images = Dir.glob("app/assets/images/slideshow/*.jpg")
   end
 
-  def designs; end
+  def all_designs
+    @thumbnails = Dir.glob("app/assets/images/products/*_tn.jpg")
+  end
+
+  def design
+    @design = params[:design]
+  end
 end

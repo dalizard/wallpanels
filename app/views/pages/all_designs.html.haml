@@ -1,0 +1,15 @@
+.main-image
+  %h1 Our 20 unique and lovely designs
+  %p
+    See here shown all our embossed wall panels and 3d wall coverings
+    and make your choice of 3d wall panels on the right side of this page.
+
+  = link_to image_tag "products/bricks-1.jpg"
+
+%ul.thumbnails.clearfix
+  - @thumbnails.each do |thumbnail|
+    %li
+      = link_to "/designs/#{File.basename(thumbnail).split('-').first}" do
+        = image_tag "products/#{File.basename(thumbnail)}"
+      %span
+        = File.basename(thumbnail).split('-').first.capitalize
