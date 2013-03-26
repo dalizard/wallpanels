@@ -11,4 +11,10 @@ class PagesController < ApplicationController
     @design = params[:design]
     @thumbnails = Dir.glob("app/assets/images/products/#{@design}*_tn.jpg")
   end
+
+  def eco_products
+  end
+
+  def contacts
+  end
 end

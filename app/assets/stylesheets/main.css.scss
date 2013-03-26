@@ -119,6 +119,9 @@ body > footer {
   width: 868px;
   margin: 0 auto;
   text-align: justify;
+  h1 {
+    text-align: left;
+  }
 }
 
 #main-navigation {
@@ -191,6 +194,26 @@ ul.thumbnails {
 
 .design-image {
   float: right;
+  img {
+    border: 1px solid $grey;
+  }
+}
+
+.eco-product-text {
+  width: 460px;
+  float: left;
+  .images {
+    margin-top: 40px;
+    text-align: center;
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.eco-product-image {
+  float: right;
+  width: 480px;
   img {
     border: 1px solid $grey;
   }
