@@ -158,7 +158,7 @@ div.main-image {
   }
 }
 
-ul.thumbnails {
+.thumbnails {
   float:right;
   width: 432px;
   li {
@@ -171,6 +171,11 @@ ul.thumbnails {
       border: 1px solid $grey;
     }
   }
+}
+
+.pagination {
+  margin-top: 10px;
+  .next_page, .previous_page { text-decoration: none; }
 }
 
 .design-details {

@@ -1,3 +1,5 @@
+require 'will_paginate/array'
+
 class PagesController < ApplicationController
   def index
     @slideshow_images = Dir.glob("app/assets/images/slideshow/*.jpg")
@@ -16,5 +18,9 @@ class PagesController < ApplicationController
   end
 
   def contacts
+  end
+
+  def projects
+    @thumbnails = Dir.glob("app/assets/images/projects/*_tn.jpg").paginate(page: params[:page], per_page: 20)
   end
 end

@@ -1,0 +1,20 @@
+.main-image
+  %h1 Завършени Проекти
+
+  = image_tag "projects/project-1.jpg"
+
+.thumbnails
+  %ul.clearfix
+    - @thumbnails.each do |thumbnail|
+      %li
+        = image_tag "projects/#{File.basename(thumbnail)}"
+
+  = will_paginate(@thumbnails, :outer_window => 0, :inner_window => 0, :previous_label => '&laquo;', :next_label => '&raquo;')
+
+:javascript
+  $(document).ready(function() {
+    $('.thumbnails li img').mouseover(function() {
+      var src = $(this).attr('src').replace("_tn", "");
+      $('.main-image img').attr('src', src);
+    });
+  });
